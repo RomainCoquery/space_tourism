@@ -111,7 +111,7 @@
             <div data-planet="titan" class="planet_description hidden">
                 <h2 class="title2">Titan</h2>
                 <p class="body">La seule lune connue pour avoir une atmosphère dense autre que la Terre, Titan est comme une maison loin de la maison (et juste quelques centaines de degrés plus froid !). En bonus, vous pouvez contemplez des vues saisissantes des anneaux de Saturne.</p>
-                <div class="line">
+                <div class="line_description">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
                 <div class="planet_travel">
