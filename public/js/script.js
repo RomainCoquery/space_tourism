@@ -1,39 +1,49 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     showContent('moon');
-// });
-
-// function showContent(contentId) {
-//     var allContents = document.querySelectorAll('.content');
-//     allContents.forEach(function (content) {
-//         content.classList.add('hidden');
-//     });
-
-//     var targetContent = document.getElementById(contentId);
-//     if (targetContent) {
-//         targetContent.classList.remove('hidden');
-//     }
-// }
-
 document.addEventListener('DOMContentLoaded', function () {
-    var planetSection = document.querySelector('.navbar');
-    var buttons = planetSection.querySelectorAll('.button');
+    var planetSection = document.querySelector('.planet_body');
 
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            buttons.forEach(function (btn) {
-                btn.classList.remove('active');
-                btn.classList.add('hidden');
-            });
+    planetSection.addEventListener('click', function (event) {
+        // Vérifiez si le clic a été effectué sur un bouton
+        if (event.target.classList.contains('button')) {
+            var planetName = event.target.dataset.planet;
 
-            event.currentTarget.classList.remove('hidden');
-            event.currentTarget.classList.add('active');
-        });
+            // Affichez l'image et la div associées à la planète cliquée
+            showPlanet(planetName);
+        }
     });
 });
 
+function showPlanet(planetName) {
+    var planets = document.querySelectorAll('.planet_description');
+    var buttons = document.querySelectorAll('.button');
+    var planetImages = document.querySelectorAll('.planet_picture img');
 
+    planets.forEach(function (planet) {
+        if (planet.dataset.planet === planetName) {
+            planet.classList.remove('hidden');
+            planet.classList.add('active');
+        } else {
+            planet.classList.remove('active');
+            planet.classList.add('hidden');
+        }
+    });
 
+    buttons.forEach(function (button) {
+        if (button.dataset.planet === planetName) {
+            button.classList.remove('hidden');
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+            button.classList.add('hidden');
+        }
+    });
 
-
-
-
+    planetImages.forEach(function (image) {
+        if (image.dataset.planet === planetName) {
+            image.classList.remove('hidden');
+            image.classList.add('active');
+        } else {
+            image.classList.remove('active');
+            image.classList.add('hidden');
+        }
+    });
+}
