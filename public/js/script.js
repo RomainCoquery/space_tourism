@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var planetSection = document.querySelector('.planet_body');
+    var planetSection = document.querySelector('.main');
 
     planetSection.addEventListener('click', function (event) {
         // Vérifiez si le clic a été effectué sur un bouton
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showPlanet(planetName) {
-    var planets = document.querySelectorAll('.planet_description');
+    var planets = document.querySelectorAll('.description');
     var buttons = document.querySelectorAll('.button');
-    var planetImages = document.querySelectorAll('.planet_picture img');
+    var planetImages = document.querySelectorAll('.picture img');
 
     planets.forEach(function (planet) {
         if (planet.dataset.planet === planetName) {
