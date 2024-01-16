@@ -7,7 +7,7 @@
     <title>Space Tourism Accueil</title>
 </head>
 
-<body class="home">
+<body class="page home">
 
     @include('layouts.header')
 

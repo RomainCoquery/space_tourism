@@ -175,10 +175,29 @@ header {
     opacity: 1;
 }
 
+/* Background des pages */
+
 .home {
+    background-image: url("/img/background_home.jpg");
+}
+
+.destination {
+    background-image: url("/img/background_planet.jpg");
+}
+
+.crew {
+    background-image: url("/img/background_crew.jpg");
+}
+
+.technology {
+    background-image: url("/img/background_technology.jpg");
+}
+
+/* Page d'accueil */
+
+.page {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/background_home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -243,70 +262,75 @@ header {
     transform: scale(1.4);
 }
 
-.destination {
-    display: flex;
-    flex-direction: column;
-    background-image: url("/img/background_planet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
+/* Page Destination */
 
 .page_title {
-    width: 100%;
+    width: 76%;
     margin-top: 6%;
-    margin-left: 26%;
-
+    margin-bottom: 6%;
 }
 
-.planet {
+.planet_body {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.planet_description {
+.planet_content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 40%;
 }
 
+.planet_description h2, p {
+    margin-bottom: 6%;
+}
+
+.line {
+    margin-bottom: 4%;
+}
+
 .nav_bar_planet {
-    width: 59.94%;
+    width: 46%;
+    margin-bottom: 6%;
 }
 
 .nav_bar_planet_list {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
-.nav_bar_planet_list a {
+.nav_bar_planet_list button {
+    color: var(--purple);
     position: relative;
-    text-decoration: none;
     display: inline-block;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-.nav_bar_planet_list a::after {
+.nav_bar_planet_list button.active {
+    color: var(--white);
+}
+
+.nav_bar_planet_list button::after {
     content: "";
     position: absolute;
-    /* bottom: -1rem; */
+    bottom: -1rem;
     left: 0;
     width: 100%;
     border-bottom: 0.4rem solid transparent;
     transition: border-color 0.3s ease;
 }
 
-.nav_bar_planet_list a:hover::after {
+.nav_bar_planet_list button:hover::after {
     border-color: var(--white);
     opacity: 0.4;
 }
 
-.nav_bar_planet_list a.active::after {
+.nav_bar_planet_list button.active::after {
     border-color: var(--white);
     opacity: 1;
 }
@@ -315,7 +339,6 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
 }
 
 .planet_distance {

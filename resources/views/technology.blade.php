@@ -7,7 +7,7 @@
     <title>Space Tourism Technology</title>
 </head>
 
-<body>
+<body class="page technology">
 
     @include('layouts.header')
 </body>

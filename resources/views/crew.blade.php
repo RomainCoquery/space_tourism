@@ -7,7 +7,7 @@
     <title>Space Tourism Crew</title>
 </head>
 
-<body>
+<body class="page crew">
 
     @include('layouts.header')   
 </body>
