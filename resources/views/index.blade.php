@@ -13,8 +13,8 @@
 
     <div class="page_body">
         <div class="home_body_text">
-            <h5 class="title5">donc vous voulez voyager dans</h5>
-            <h1 class="title1">l'espace</h1>
+            <h1 class="title5">donc vous voulez voyager dans</h1>
+            <h2 class="title1">l'espace</h2>
             <p class="body">Soyons objectif; si vous voulez aller dans l'espace, vous pouvez aller véritablement dans le véritable espace et non juste planer sur le bord de celui-ci. Eh bien, asseyez-vous parce que nous allons vous donner une expérience vraiment extraordinaire!</p>
         </div>
 

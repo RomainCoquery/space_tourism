@@ -17,11 +17,11 @@
     <div class="planet_body main">
 
         <div class="planet_picture picture">
-                <img data-planet="moon" class="active" src="{{ asset('img/moon.png') }}" alt="Lune">
-                <img data-planet="mars" class="hidden" src="{{ asset('img/mars.png') }}" alt="Mars">
-                <img data-planet="europe" class="hidden" src="{{ asset('img/europe.png') }}" alt="Europe">
-                <img data-planet="titan" class="hidden" src="{{ asset('img/titan.png') }}" alt="Titan">
-            </div>
+            <img data-planet="moon" class="active" src="{{ asset('img/moon.png') }}" alt="Lune">
+            <img data-planet="mars" class="hidden" src="{{ asset('img/mars.png') }}" alt="Mars">
+            <img data-planet="europe" class="hidden" src="{{ asset('img/europe.png') }}" alt="Europe">
+            <img data-planet="titan" class="hidden" src="{{ asset('img/titan.png') }}" alt="Titan">
+        </div>
 
         <div class="planet_content">
 
