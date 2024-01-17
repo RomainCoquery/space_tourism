@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var planetSection = document.querySelector('.main');
+    var nameSection = document.querySelector('.main');
 
-    planetSection.addEventListener('click', function (event) {
+    nameSection.addEventListener('click', function (event) {
         // Vérifiez si le clic a été effectué sur un bouton
         if (event.target.classList.contains('button')) {
-            var planetName = event.target.dataset.planet;
+            var nameResult = event.target.dataset.name;
 
             // Affichez l'image et la div associées à la planète cliquée
-            showPlanet(planetName);
+            showResult(nameResult);
         }
     });
 });
 
-function showPlanet(planetName) {
-    var planets = document.querySelectorAll('.description');
+function showResult(nameResult) {
+    var names = document.querySelectorAll('.description');
     var buttons = document.querySelectorAll('.button');
-    var planetImages = document.querySelectorAll('.picture img');
+    var nameImages = document.querySelectorAll('.picture img');
 
-    planets.forEach(function (planet) {
-        if (planet.dataset.planet === planetName) {
-            planet.classList.remove('hidden');
-            planet.classList.add('active');
+    names.forEach(function (name) {
+        if (name.dataset.name === nameResult) {
+            name.classList.remove('hidden');
+            name.classList.add('active');
         } else {
-            planet.classList.remove('active');
-            planet.classList.add('hidden');
+            name.classList.remove('active');
+            name.classList.add('hidden');
         }
     });
 
     buttons.forEach(function (button) {
-        if (button.dataset.planet === planetName) {
+        if (button.dataset.name === nameResult) {
             button.classList.remove('hidden');
             button.classList.add('active');
         } else {
@@ -37,8 +37,8 @@ function showPlanet(planetName) {
         }
     });
 
-    planetImages.forEach(function (image) {
-        if (image.dataset.planet === planetName) {
+    nameImages.forEach(function (image) {
+        if (image.dataset.name === nameResult) {
             image.classList.remove('hidden');
             image.classList.add('active');
         } else {
