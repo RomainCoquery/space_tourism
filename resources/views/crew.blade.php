@@ -11,8 +11,6 @@
 <body class="page crew">
 
     @include('layouts.header')
-    
-    
 
     <div class="crew_body main">
 

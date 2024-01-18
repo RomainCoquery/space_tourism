@@ -19,7 +19,7 @@
         </div>
 
         <div class="home_body_button circle circle1">
-            <a href="#">Explorer</a>
+            <a href="{{ url('/destination') }}">Explorer</a>
         </div>
     </div>
 </body>
