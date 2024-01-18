@@ -18,7 +18,7 @@
             <p class="body">Soyons objectif; si vous voulez aller dans l'espace, vous pouvez aller véritablement dans le véritable espace et non juste planer sur le bord de celui-ci. Eh bien, asseyez-vous parce que nous allons vous donner une expérience vraiment extraordinaire!</p>
         </div>
 
-        <div class="home_body_button circle circle1">
+        <div class="home_body_button circle">
             <a href="{{ url('/destination') }}">Explorer</a>
         </div>
     </div>
