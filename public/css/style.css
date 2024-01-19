@@ -5,19 +5,18 @@
     --font-barlow: 'Barlow', sans-serif;
     --font-bellefair: 'Bellefair', serif;
 
-    --text-subtitle-2: 14px;
-    --text-navigation: 16px;
-    --text-corps: 18px;
-    --text-corps: 18px;
-    --text-subtitle-1: 28px;
-    --text-title-5: 28px;
-    --text-title-4: 32px;
-    --text-title-3: 56px;
-    --text-title-2: 100px;
-    --text-title-1: 150px;
+    --text-navigation: 1.6rem;
+    --text-corps: 1.8rem;
+    --text-subtitle-2: 1.4rem;
+    --text-subtitle-1: 2.8rem;
+    --text-title-5: 2.8rem;
+    --text-title-4: 3.2rem;
+    --text-title-3: 5.6rem;
+    --text-title-2: 10rem;
+    --text-title-1: 15rem;
 
     --letter-spacing-small: 2.36px;
-    --letter-spacing-medium: 2.7;
+    --letter-spacing-medium: 2.7px;
     --letter-spacing-large: 4.72px;
 
     --white: #FFFFFF;
@@ -237,7 +236,7 @@ header {
 .home_body_button a {
     font-family: var(--font-bellefair);
     font-weight: var(--font-weight-regular);
-    font-size: 32px;
+    font-size: 3.2rem;
     color: var(--blue);
     text-transform: uppercase;
     text-decoration: none;
@@ -295,10 +294,6 @@ header {
 .planet_description h2, p {
     margin-bottom: 6%;
     width: 80%;
-}
-
-.line_description {
-    margin-bottom: 4%;
 }
 
 .nav_bar_planet {
@@ -535,4 +530,171 @@ header {
 
 .circle_technology:hover::after {
     transform: scale(1.4);
+}
+
+@media only screen and (max-width: 769px) and (min-width: 376px) {
+
+    /* ajustement de la tailles de police des éléments à 70% de la version desktop */
+
+    :root {
+        --text-navigation: 1.4rem;
+        --text-corps: 1.6rem;
+        --text-subtitle-2: 1.4rem;
+        --text-subtitle-1: 2.8rem;
+        --text-title-5: 2rem;
+        --text-title-4: 3.2rem;
+        --text-title-3: 5.6rem;
+        --text-title-2: 8rem;
+        --text-title-1: 10.5rem;
+    }
+
+    .title1 {
+        font-size: var(--text-title-1);
+    }
+    
+    .title2 {
+        font-size: var(--text-title-2);
+    }
+    
+    .title3 {
+        font-size: var(--text-title-3);
+    }
+    
+    .title4 {
+        font-size: var(--text-title-4);
+    }
+    
+    .title5 {
+        font-size: var(--text-title-5);
+    }
+
+    .subtitle1 {
+        font-size: var(--text-subtitle-1);
+    }
+    
+    .subtitle2 {
+        font-size: var(--text-subtitle-2);
+    }
+    
+    .navigation {
+        font-size: var(--text-navigation);
+    }
+    
+    .body {
+        font-size: var(--text-corps);
+    }
+    
+    /* Page d'accueil */
+
+    .home {
+        background-image: url("/img/tablet_background_home.jpg");
+    }
+
+    header {
+        margin-top: 0;
+        margin-left: 3.82%;
+        width: 96.18%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .line {
+        display: none;
+    }
+
+    .nav_top_list {
+        padding-left: 4%;
+        margin-right: 4%;
+
+    }
+
+    .nav_top_list a strong {
+        display: none;
+    }
+
+    .page_body {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 14%;
+    }
+
+    .home_body_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    /* Page Destination */
+
+    .planet_body {
+        margin-top: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .planet_picture {
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .planet_picture img {
+        width: 30rem;
+    }
+
+    .planet_content {
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .nav_bar_planet {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_bar_planet_list li {
+        margin-right: 20%;
+    }
+
+    .planet_description.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planet_description h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+
+    .planet_description p {
+        width: 68%;
+        margin-bottom: 4%;
+    }
+
+    .planet_travel {
+        width: 50%;
+        justify-content: space-between;
+        margin-top: 4%;
+        margin-bottom: 8%;
+    }
+
+    /* page Crew */
+
 }

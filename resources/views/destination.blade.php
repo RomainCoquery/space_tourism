@@ -40,7 +40,7 @@
             <div data-name="moon" class="planet_description description active">
                 <h2 class="title2">Lune</h2>
                 <p class="body">Voyez notre planète comme vous ne l'avez jamais vue auparavant. Un parfait voyage de détente pour vous aider à prendre du recul et revenir requinqué. Pendant que vous y êtes, plongez-vous dans l'histoire en visitant les sites d'atterrissages de Luna 2 et Apollo 11.</p>
-                <div class="line">
+                <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
                 <div class="planet_travel">
@@ -65,7 +65,7 @@
             <div data-name="mars" class="planet_description description hidden">
                 <h2 class="title2">Mars</h2>
                 <p class="body">N'oubliez pas vos bottes de randonnée. Vous en aurez besoin pour gravir le mont Olympus, la plus haute montagne planétaire dans notre système solaire. Il fait deux fois et demi la taille de l'Everest !</p>
-                <div class="line">
+                <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
                 <div class="planet_travel">
@@ -88,7 +88,7 @@
             <div data-name="europe" class="planet_description description hidden">
                 <h2 class="title2">Europe</h2>
                 <p class="body">La plus petite des quatre lunes galiléennes en orbite autour de Jupiter, Europe est le rêve des amoureux de  l'hiver. Sa surface glacée est parfaite pour faire un peu de patin à glace, du curling, du hockey ou tout simplement pour vous détendre dans votre confortable chalet hivernal.</p>
-                <div class="line">
+                <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
                 <div class="planet_travel">
@@ -111,7 +111,7 @@
             <div data-name="titan" class="planet_description description hidden">
                 <h2 class="title2">Titan</h2>
                 <p class="body">La seule lune connue pour avoir une atmosphère dense autre que la Terre, Titan est comme une maison loin de la maison (et juste quelques centaines de degrés plus froid !). En bonus, vous pouvez contemplez des vues saisissantes des anneaux de Saturne.</p>
-                <div class="line_description">
+                <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
                 <div class="planet_travel">
