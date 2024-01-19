@@ -534,7 +534,7 @@ header {
 
 @media only screen and (max-width: 769px) and (min-width: 376px) {
 
-    /* ajustement de la tailles de police des éléments à 70% de la version desktop */
+    /* ajustement de la taille de police des éléments à 70% de la version desktop */
 
     :root {
         --text-navigation: 1.4rem;
@@ -744,6 +744,7 @@ header {
 
     .crew_picture {
         width: 100%;
+        justify-content: center;
     }
 
     .crew_picture img {
@@ -818,4 +819,8 @@ header {
     .technology_description p {
         width: 60%;
     }
+}
+
+@media only screen and (max-width: 375px) {
+
 }
