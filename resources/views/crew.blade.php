@@ -21,7 +21,7 @@
             <!-- Contenu de douglas -->
             <div data-name="douglas" class="crew_description description active">
                 <h2 class="title4">Commandant</h2>
-                <h3 class="title3">Douglas</h3>
+                <h3 class="title3">Douglas Hurley</h3>
                 <p class="body">Douglas Gérald Hurley est un ingénieur américain, un ancien pilote du Corps des Marines et un ancien astronaute de la NASA. Il s'est lancé dans l'espace pour la troisième fois en tant que commandant du vaissaux Crew Dragon Demo-2.</p>
             </div>
 

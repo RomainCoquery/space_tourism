@@ -51,9 +51,9 @@
         </div>
 
         <div class="technology_picture picture">
-            <img data-name="lanceur" class="active" src="{{ asset('img/rocket.jpg') }}" alt="lanceur">
-            <img data-name="spatioport" class="hidden" src="{{ asset('img/launcher.jpg') }}" alt="spatioport">
-            <img data-name="capsule" class="hidden" src="{{ asset('img/capsule.jpg') }}" alt="capsule">
+            <img class="rocket active" data-name="lanceur" class="active" src="{{ asset('img/rocket.jpg') }}" alt="lanceur">
+            <img class="launcher hidden" data-name="spatioport" class="hidden" src="{{ asset('img/launcher.jpg') }}" alt="spatioport">
+            <img class="capsule hidden" data-name="capsule" class="hidden" src="{{ asset('img/capsule.jpg') }}" alt="capsule">
         </div>
     </div>
 </body>
