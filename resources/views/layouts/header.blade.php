@@ -9,7 +9,13 @@
         <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
     </div>
 
-    <nav class="nav_top navigation">
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="menu" class="nav_top navigation">
         <ul class="nav_top_list navigation">
             <li><a class= "navigation {{ Request::is('/') ? 'active' : '' }}" href="{{ url('/') }}"><strong>00</strong> Accueil</a></li>
             <li><a class="navigation {{ Request::is('destination') ? 'active' : '' }}" href="{{ url('/destination') }}"><strong>01</strong> Destination</a></li>

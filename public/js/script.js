@@ -1,3 +1,5 @@
+// ADD/REMOVE page active
+
 document.addEventListener('DOMContentLoaded', function () {
     var nameSection = document.querySelector('.main');
 
@@ -47,3 +49,14 @@ function showResult(nameResult) {
         }
     });
 }
+
+// Hamburger
+document.addEventListener('DOMContentLoaded', function () {
+    var navIcon = document.getElementById('hamburger');
+    var overlay = document.getElementById('menu');
+
+    navIcon.addEventListener('click', function () {
+        navIcon.classList.toggle('open');
+        overlay.classList.toggle("overlay");
+    });
+});
