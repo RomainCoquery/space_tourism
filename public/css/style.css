@@ -281,10 +281,6 @@ header {
     justify-content: space-around;
 }
 
-.planet_picture {
-    margin-left: 10%;
-}
-
 .planet_content {
     display: flex;
     flex-direction: column;
@@ -464,9 +460,9 @@ header {
     margin-bottom: 10%;
 }
 
-.navbar {
-    margin-left: 14%;
-    margin-top: 6%;
+.nav_bar_technology {
+    margin-top: 80%;
+    margin-left: 80%;
 }
 
 .nav_bar_technology_list {
@@ -532,7 +528,7 @@ header {
     transform: scale(1.4);
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 900px) {
 
     /* ajustement de la taille de police des éléments à 70% de la version desktop */
 
@@ -789,6 +785,11 @@ header {
         order: 2;
     }
 
+    .nav_bar_technology {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
     .nav_bar_technology_list {
         display: flex;
         flex-direction: row;
@@ -821,13 +822,13 @@ header {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
 
     /* ajustement de la taille de police des éléments à 70% de la version desktop */
 
     :root {
         --text-navigation: 1.4rem;
-        --text-corps: 1.5rem;
+        --text-corps: 1.4rem;
         --text-subtitle-2: 1.4rem;
         --text-subtitle-1: 2.8rem;
         --text-title-5: 1.6rem;
@@ -943,11 +944,12 @@ header {
     &.overlay {
         visibility: visible;
         opacity: 1;
-        padding-top: 16rem;
+        padding-top: 18rem;
         backdrop-filter: blur(2.4rem);
         width: 68%;
         height: 100vh;
     }
+
     }
 
     .nav_top_list {
@@ -958,7 +960,7 @@ header {
     }
 
     .nav_top_list li {
-        margin-bottom: 10%;
+        margin-bottom: 20%;
     }
 
     .nav_top_list a strong {
@@ -966,10 +968,19 @@ header {
     }
 
     .nav_top_list a::after {
-        display: none;
+        bottom: -2rem;
+        border-bottom: 0.2rem solid transparent;
     }
 
     /* Page d'accueil */
+
+    .home_body_text {
+        width: 100%;
+    }
+
+    .home_body_text h1 {
+        letter-spacing: var(--letter-spacing-medium);
+    }
 
     .home_body_button a {
         font-size: 2rem;
@@ -980,4 +991,74 @@ header {
         height: 15rem;
         margin-bottom: 4rem;
     }
+
+
+    /* Page destination */
+
+    .page_title {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        color: var(--white);
+        margin-bottom: 6%;
+        
+    }
+
+    .page_title strong {
+        opacity: 0.5;
+    }
+
+    .planet_picture img {
+        width: 17rem;
+    }
+    
+    .nav_bar_planet {
+        width: 80%;
+    }
+
+    .planet_description p {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+    .planet_travel {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .line_planet {
+        width: 90%;
+    }
+
+    .line_planet img{
+        max-width: 100%;
+    }
+
+    .planet_distance {
+        margin-right: 0;
+        margin-bottom: 12%;
+    }
+
+    /* page Crew */
+
+    .crew_description {
+        order: 2;
+    }
+
+    .crew_content h1 {
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+    .crew_picture {
+        order: 1;
+    }
+
+    .crew_picture img {
+        width: 50%;
+    }
+
+
+
 }
