@@ -832,8 +832,8 @@ header {
         --text-subtitle-2: 1.4rem;
         --text-subtitle-1: 2.8rem;
         --text-title-5: 1.6rem;
-        --text-title-4: 3.2rem;
-        --text-title-3: 5.6rem;
+        --text-title-4: 1.6rem;
+        --text-title-3: 2.4rem;
         --text-title-2: 8rem;
         --text-title-1: 7.6rem;
     }
@@ -1059,6 +1059,23 @@ header {
         width: 50%;
     }
 
+    .crew_content p {
+        width: 86%;
+    }
 
+    /* page Technology */
 
+    .nav_bar_technology_list button {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .nav_bar_technology_list button.active {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .technology_description p {
+        width: 86%;
+    }
 }
