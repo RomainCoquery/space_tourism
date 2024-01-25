@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name("index");
+Route::get('/', [LangController::class, 'index'])->name('home');
+Route::get('/destination', [LangController::class, 'destination'])->name('destination');
+Route::get('/crew', [LangController::class, 'crew'])->name('crew');
+Route::get('/technology', [LangController::class, 'technology'])->name('technology');
 
-Route::get('/destination', function () {
-    return view('destination');
-})->name("destination");
-
-Route::get('/crew', function () {
-    return view('crew');
-})->name("crew");
-
-Route::get('/technology', function () {
-    return view('technology');
-})->name("technology");
+// Route pour le changement de langue
+Route::post('/change-lang/{locale}', [LangController::class, 'changeLang'])->name('changeLang');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,34 +16,34 @@
 
         <div class="crew_content">
 
-            <h1 class="title5 page_title"><strong>02</strong> Rencontrez l'équipage</h1>
+            <h1 class="title5 page_title"><strong>02</strong>{{ __("crewH1") }}</h1>
 
             <!-- Contenu de douglas -->
             <div data-name="douglas" class="crew_description description active">
-                <h2 class="title4">Commandant</h2>
+                <h2 class="title4">{{ __("commander") }}</h2>
                 <h3 class="title3">Douglas Hurley</h3>
-                <p class="body">Douglas Gérald Hurley est un ingénieur américain, un ancien pilote du Corps des Marines et un ancien astronaute de la NASA. Il s'est lancé dans l'espace pour la troisième fois en tant que commandant du vaissaux Crew Dragon Demo-2.</p>
+                <p class="body">{{ __("douglasText") }}</p>
             </div>
 
             <!-- Contenu de shuttleworth -->
             <div data-name="shuttleworth" class="crew_description description hidden">
-                <h2 class="title4">Spécialiste de mission</h2>
+                <h2 class="title4">{{ __("missionSpecialist") }}</h2>
                 <h3 class="title3">Mark Shuttleworth</h3>
-                <p class="body">Mark Richard Shuttleworth est le fondateur et PDG de Canonical, la société derrière le système d’exploitation Ubuntu basé sur Linux. Shuttleworth est devenu le premier sud-africain à voyager dans l’espace en tant que touriste spatial.</p>
+                <p class="body">{{ __("markText") }}</p>
             </div>
-                
+
             <!-- Contenu de glover -->
             <div data-name="glover" class="crew_description description hidden">
-                <h2 class="title4">Pilote</h2>
+                <h2 class="title4">{{ __("pilot") }}</h2>
                 <h3 class="title3">Victor Glover</h3>
-                <p class="body">Pilote du premier vol opérationnel du SpaceX Crew Dragon à destination de la Station Spatiale Internationale. Glover est commandant dans la marine américaine, où il pilote un F/A-18. Il a été membre de l’équipage de l’Expédition 64 et a servi comme ingénieur de vol des systèmes de station.</p>
+                <p class="body">{{ __("victorText") }}</p>
             </div>
                         
             <!-- Contenu d'ansari -->
             <div data-name="ansari" class="crew_description description hidden">
-                <h2 class="title4">Ingénieure de vol</h2>
+                <h2 class="title4">{{ __("flightEngineer") }}</h2>
                 <h3 class="title3">Anousheh Ansari</h3>
-                <p class="body">Anousheh Ansari est une ingénieure Irano-Américaine et cofondatrice de Prodea Systems. Ansari était la quatrième touriste de l'espace autofinancée, la première femme autofinancée à se rendre à l'ISS, et la première iranienne dans l'espace.</p>
+                <p class="body">{{ __("ansariText") }}</p>
             </div>
 
             <div class="navbar">

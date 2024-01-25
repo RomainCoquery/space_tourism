@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 
     @include('layouts.header')
 
-    <h1 class="title5 page_title"><strong>01</strong> Choisissez votre destination</h1>
+    <h1 class="title5 page_title"><strong>01</strong>{{ __("destinationH1") }}</h1>
 
     <div class="planet_body main">
 
@@ -28,18 +28,18 @@
             <div class="navbar">
                 <nav class="nav_bar_planet navigation">
                     <ul class="nav_bar_planet_list ">
-                        <li><button class="button active navigation" data-name="moon">Lune</button></li>
-                        <li><button class="button hidden navigation" data-name="mars">Mars</button></li>
-                        <li><button class="button hidden navigation" data-name="europe">Europe</button></li>
-                        <li><button class="button hidden navigation" data-name="titan">Titan</button></li>
+                        <li><button class="button active navigation" data-name="moon">{{ __("moon") }}</button></li>
+                        <li><button class="button hidden navigation" data-name="mars">{{ __("mars") }}</button></li>
+                        <li><button class="button hidden navigation" data-name="europe">{{ __("europa") }}</button></li>
+                        <li><button class="button hidden navigation" data-name="titan">{{ __("titan") }}</button></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- Contenu de la lune -->
             <div data-name="moon" class="planet_description description active">
-                <h2 class="title2">Lune</h2>
-                <p class="body">Voyez notre planète comme vous ne l'avez jamais vue auparavant. Un parfait voyage de détente pour vous aider à prendre du recul et revenir requinqué. Pendant que vous y êtes, plongez-vous dans l'histoire en visitant les sites d'atterrissages de Luna 2 et Apollo 11.</p>
+                <h2 class="title2">{{ __("moon") }}</h2>
+                <p class="body">{{ __("moonText") }}</p>
                 <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
@@ -53,9 +53,9 @@
                     </div>
                     <div class="planet_duration">
                         <ul>
-                            <li class="subtitle2">Durée</li>
+                            <li class="subtitle2">{{ __("duration") }}</li>
                             <li></li>
-                            <li class="subtitle1">3 Jours</li>
+                            <li class="subtitle1">3 {{ __("day") }}</li>
                         </ul>
                     </div>
                 </div>
@@ -63,8 +63,8 @@
 
             <!-- Contenu de mars -->
             <div data-name="mars" class="planet_description description hidden">
-                <h2 class="title2">Mars</h2>
-                <p class="body">N'oubliez pas vos bottes de randonnée. Vous en aurez besoin pour gravir le mont Olympus, la plus haute montagne planétaire dans notre système solaire. Il fait deux fois et demi la taille de l'Everest !</p>
+                <h2 class="title2">{{ __("mars") }}</h2>
+                <p class="body">{{ __("marsText") }}</p>
                 <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
@@ -77,8 +77,8 @@
                     </div>
                     <div class="planet_duration">
                         <ul>
-                            <li class="subtitle2">Durée</li>
-                            <li class="subtitle1">9 Mois</li>
+                            <li class="subtitle2">{{ __("duration") }}</li>
+                            <li class="subtitle1">9 {{ __("month") }}</li>
                         </ul>
                     </div>
                 </div>
@@ -86,8 +86,8 @@
                 
             <!-- Contenu d'europe -->
             <div data-name="europe" class="planet_description description hidden">
-                <h2 class="title2">Europe</h2>
-                <p class="body">La plus petite des quatre lunes galiléennes en orbite autour de Jupiter, Europe est le rêve des amoureux de  l'hiver. Sa surface glacée est parfaite pour faire un peu de patin à glace, du curling, du hockey ou tout simplement pour vous détendre dans votre confortable chalet hivernal.</p>
+                <h2 class="title2">{{ __("europa") }}</h2>
+                <p class="body">{{ __("europaText") }}</p>
                 <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
@@ -100,8 +100,8 @@
                     </div>
                     <div class="planet_duration">
                         <ul>
-                            <li class="subtitle2">Durée</li>
-                            <li class="subtitle1">3 Ans</li>
+                            <li class="subtitle2">{{ __("duration") }}</li>
+                            <li class="subtitle1">3 {{ __("year") }}</li>
                         </ul>
                     </div>
                 </div>
@@ -109,8 +109,8 @@
                         
             <!-- Contenu de titan -->
             <div data-name="titan" class="planet_description description hidden">
-                <h2 class="title2">Titan</h2>
-                <p class="body">La seule lune connue pour avoir une atmosphère dense autre que la Terre, Titan est comme une maison loin de la maison (et juste quelques centaines de degrés plus froid !). En bonus, vous pouvez contemplez des vues saisissantes des anneaux de Saturne.</p>
+                <h2 class="title2">{{ __("titan") }}</h2>
+                <p class="body">{{ __("titanText") }}</p>
                 <div class="line_planet">
                     <img src="{{ asset('img/decoration.png') }}" alt="Decoration">
                 </div>
@@ -123,8 +123,8 @@
                     </div>
                     <div class="planet_duration">
                         <ul>
-                            <li class="subtitle2">Durée</li>
-                            <li class="subtitle1">7 Ans</li>
+                            <li class="subtitle2">{{ __("duration") }}</li>
+                            <li class="subtitle1">7 {{ __("year") }}</li>
                         </ul>
                     </div>
                 </div>
