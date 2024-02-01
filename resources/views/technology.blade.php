@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="{{ asset('js/script.js') }}" defer></script>
-    <title>Space Tourism Technology</title>
-</head>
 
-<body class="page technology">
+@extends('layouts.layout')
 
-    @include('layouts.header')
+@section('title', 'Space Tourism Technology')
+
+@section('bodyClass', 'page technology')
+
+@section('content')
 
     <h1 class="title5 page_title"><strong>03</strong>{{ __("technologyH1") }}</h1>
 
@@ -55,6 +50,7 @@
             <img class="launcher hidden" data-name="spatioport" class="hidden" src="{{ asset('img/launcher.jpg') }}" alt="spatioport">
             <img class="capsule hidden" data-name="capsule" class="hidden" src="{{ asset('img/capsule.jpg') }}" alt="capsule">
         </div>
+        
     </div>
-</body>
-</html>
+
+@endsection

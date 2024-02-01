@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="{{ asset('js/script.js') }}" defer></script>
-    <title>Space Tourism Crew</title>
-</head>
 
-<body class="page crew">
+@extends('layouts.layout')
 
-    @include('layouts.header')
+@section('title', 'Space Tourism Crew')
+
+@section('bodyClass', 'page crew')
+
+@section('content')
 
     <div class="crew_body main">
 
@@ -65,5 +60,5 @@
             <img data-name="ansari" class="hidden" src="{{ asset('img/ansari.png') }}" alt="Ansari">
         </div>
     </div>
-</body>
-</html>
+
+@endsection

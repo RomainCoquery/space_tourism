@@ -22,5 +22,7 @@ class Page extends Model
         'distance',
         'duration',
         'picture',
+        'en_distance_unit',
+        'fr_duration_unit'
     ];
 }

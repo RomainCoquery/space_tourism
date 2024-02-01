@@ -34,6 +34,9 @@ new class extends Component
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <x-nav-link :href="route('destination.index')" :active="request()->routeIs('destination.index')" wire:navigate>
+                    {{ __('Destination') }}
+                </x-nav-link>
             </div>
 
             <!-- Settings Dropdown -->
