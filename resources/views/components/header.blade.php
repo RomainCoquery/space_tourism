@@ -1,4 +1,3 @@
-<!-- resources/layouts/header.blade.php -->
 
 <header>
     <div class="logo">

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Destination extends Model
+class Technology extends Model
 {
     use HasFactory;
 
@@ -14,11 +14,6 @@ class Destination extends Model
         'fr_name',
         'en_description',
         'fr_description',
-        'distance',
-        'distance_unit',
-        'duration',
-        'en_duration_unit',
-        'fr_duration_unit',
         'picture'
     ];
 }

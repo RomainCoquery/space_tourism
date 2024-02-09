@@ -12,7 +12,6 @@ class SetLocale
         if (session()->has('locale')) {
             $locale = session('locale');
 
-            // Assurez-vous que la locale est valide
             if (in_array($locale, ['en', 'fr'])) {
                 App::setLocale($locale);
             }
