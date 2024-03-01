@@ -629,6 +629,8 @@ header {
         display: none;
     }
 
+    /* Page Home */
+    
     .page_body {
         flex-direction: column;
         justify-content: center;
